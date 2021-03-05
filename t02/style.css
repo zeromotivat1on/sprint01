@@ -1,0 +1,14 @@
+.gauntlet {
+    width: 175px;
+    height: 300px;
+    margin-bottom: 10px;
+}
+
+.gauntlet:hover ~ .alt_man {
+    opacity: 0;
+}
+
+.man, .alt_man {
+    width: 80px;
+    height: 80px;
+}

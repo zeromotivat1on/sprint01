@@ -1,0 +1,26 @@
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: lightgreen;
+    position: relative;
+    animation: circle_movement 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes circle_movement {
+    0% {
+        left:0%;
+    }
+    50% {
+        left:calc(100% - 100px);
+    }
+    100%{
+        left:0%;
+    }
+}
+
+.circle:hover {
+    background: lightcoral;
+    transition: background 2s;
+}

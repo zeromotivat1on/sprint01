@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap');
+
+h1 {
+    margin: 20px;
+}
+
+input {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.header {
+    display: flex;
+    color: palevioletred;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    margin-left: 33px;
+}
+
+.center_question {
+    display: flex;
+    justify-content: center;
+    color: gray;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+.three_checkboxes, .two_checkboxes, .one_checkbox {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0px;
+}
+
+.container {
+    width: 227px;
+    text-align: center;
+    padding: 20px 10px;
+    border: 1.5px solid gray;
+    border-radius: 25px;
+    background: white;
+    color: gray;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+input[type=checkbox]:checked ~ .container {
+    background: darkblue;
+    color: white;
+}
+
+.job_det {
+    padding: 0px 0px 0px 15px;
+    border: 0px;
+    border-bottom: 1.5px solid lightgray;
+    font-size: 18px;
+    margin: 0px 0px 30px 30px;
+}
+
+.name_email {
+    display: flex;
+    justify-content: space-around;
+}
+
+.name, .email {
+    width: 50%;
+    padding: 0px 0px 0px 15px;
+    border: 0px;
+    border-bottom: 1.5px solid lightgray;
+    font-size: 18px;
+    margin: 0px 25px 0px 29px;
+}
+
+.job_det_div {
+    display: flex;
+    margin-right: 25px;
+}
+
+.job_det {
+    width: 100%;
+}
+
+.send_div {
+    margin: 40px 24px 0px 26px;
+}
+
+.send {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    border: 0px;
+    background: palevioletred;
+    color: white;
+    font-weight: 700;
+}
+
+.send:hover {
+    background: lightcoral;
+    transition: background 1s;
+}
