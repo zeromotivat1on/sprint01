@@ -49,9 +49,94 @@ input[type=checkbox] {
     display: none;
 }
 
-input[type=checkbox]:checked ~ .container {
+#defeat:checked ~ .defeat_label {
     background: darkblue;
     color: white;
+}
+
+.defeat_label:after {
+    visibility: hidden;
+    content: "✓";
+}
+
+#defeat:checked ~ .defeat_label:after {
+    visibility: visible;
+    padding-left: 8px;
+}
+
+#save:checked ~ .save_label {
+    background: darkblue;
+    color: white;
+}
+
+.save_label:after {
+    visibility: hidden;
+    content: "✓";
+}
+
+#save:checked ~ .save_label:after {
+    visibility: visible;
+    padding-left: 10px;;
+}
+
+#stop:checked ~ .stop_label {
+    background: darkblue;
+    color: white;
+}
+
+.stop_label:after {
+    visibility: hidden;
+    content: "✓";
+}
+
+#stop:checked ~ .stop_label:after {
+    visibility: visible;
+    padding-left: 10px;;
+}
+
+#prevent:checked ~ .prevent_label {
+    background: darkblue;
+    color: white;
+}
+
+.prevent_label:after {
+    visibility: hidden;
+    content: "✓";
+}
+
+#prevent:checked ~ .prevent_label:after {
+    visibility: visible;
+    padding-left: 10px;;
+}
+
+#train:checked ~ .train_label {
+    background: darkblue;
+    color: white;
+}
+
+.train_label:after {
+    visibility: hidden;
+    content: "✓";
+}
+
+#train:checked ~ .train_label:after {
+    visibility: visible;
+    padding-left: 10px;;
+}
+
+#other:checked ~ .other_label {
+    background: darkblue;
+    color: white;
+}
+
+.other_label:after {
+    visibility: hidden;
+    content: "✓";
+}
+
+#other:checked ~ .other_label:after {
+    visibility: visible;
+    padding-left: 10px;;
 }
 
 .job_det {
@@ -86,7 +171,7 @@ input[type=checkbox]:checked ~ .container {
 }
 
 .send_div {
-    margin: 40px 24px 0px 26px;
+    margin: 40px 22px 0px 26px;
 }
 
 .send {

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1>Settings</h1>
+    <div class="main">
+        <div class="settings">
+            <div class="left">
+                <p class="text">Typeface</p>
+                <div class="left_fonts">
+                    <input list="fonts" name="font" class="fonts_input">
+                    <datalist id="fonts">
+                        <option value="Acunim Pro"></option>
+                        <option value="Comic Suns"></option>
+                        <option value="Times New Roman"></option>
+                    </datalist>
+                </div>
+                <div class="left_checkboxes">
+                    <p class="text">Weight</p>
+                    <label>
+                        <input id="regular" type="checkbox">
+                        <span class="checkmark" for="regular"></span>
+                        Regular
+                    </label>
+                    <label>
+                        <input id="bold" type="checkbox">
+                        <span class="checkmark" for="bold"></span>
+                        Bold
+                    </label>
+                </div>
+                <div class="left_range">
+                    <p class="text">Size</p>
+                    <input class="slider" type="range" min="1" max="100" value="50">
+                    <div class="slider_borders">
+                        <span>A</span>
+                        <span class="big_A">A</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="right_dark_theme">
+                    <span>Dark UI</span>
+                    <label>
+                        <input id="dark_ui" type="checkbox">
+                        <span class="toggle" for="dark_ui"></span>
+                    </label>
+                </div>
+
+                <div class="right_color_choose">
+                    <p>Color</p>
+                    <div class="color_checkboxes">
+                        <label>
+                            <input id="red" type="checkbox">
+                            <span class="color red" for="red"></span>
+                        </label>
+                        <label>
+                            <input id="green" type="checkbox">
+                            <span class="color green" for="green"></span>
+                        </label>
+                        <label>
+                            <input id="black" type="checkbox">
+                            <span class="color pink" for="black"></span>
+                        </label>
+                        <label>
+                            <input id="white" type="checkbox">
+                            <span class="color blue" for="white"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <img src="assets/images/artistic-brush.png">
+            <img src="assets/images/user-icon.png">
+            <img src="assets/images/sms-speech-bubble.png">
+            <img src="assets/images/computer-screen.png">
+        </div>
+    </div>
+</body>
+</html>

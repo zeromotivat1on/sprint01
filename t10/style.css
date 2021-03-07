@@ -1,0 +1,183 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    color: gray;
+    text-align: center;
+}
+
+.main {
+    display: flex;
+    background: rgb(80, 80, 80);
+    margin: 0px 100px;
+    padding: 20px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.settings {
+    width: calc(100% - 190px);
+    display: flex;
+    flex-flow: row;
+    background: darkgray;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 5px 0px 5px 5px;
+}
+
+.left {
+    display: flex;
+    flex-flow: column;
+}
+
+.left_checkboxes, .left_range {
+    margin-top: 40px;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+.left_checkboxes label .checkmark{
+    user-select: none;
+    padding: 1px 9px;
+    border: 1.5px solid white;
+    background-color: rgb(80, 80, 80);
+    color: gray;
+    margin-right: 5px;
+    position: relative;
+}
+
+.left_checkboxes label input:checked ~ .checkmark::before {
+    color: white;
+    content: "✓";
+    position: absolute;
+    left: 3px;
+}
+
+.slider {
+    height: 3px;
+}
+
+.slider_borders {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 15px;
+    margin-top: 10px;
+}
+
+.big_A {
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+
+.right {
+    display: flex;
+    flex-flow: column;
+    margin-left: 200px;
+}
+
+.right_dark_theme {
+    display: flex;
+    margin-top: 50px;
+}
+
+.right_color_choose {
+    display: flex;
+    flex-flow: column;
+    margin-top: 40px;
+}
+
+#dark_ui {
+    margin-left: 80px;
+}
+
+.right_dark_theme label .toggle {
+    user-select: none;
+    padding: 4px 29px;
+    border-radius: 20px;
+    border: 1.5px solid white;
+    background-color: rgb(80, 80, 80);
+    color: gray;
+    position: relative;
+    transition: background 0.5s ease-in-out;
+    margin-left: 90px;
+}
+
+.right_dark_theme label .toggle::before {
+    content: '';
+    position: absolute;   
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    top: 0px;
+    left: 2px;
+    background-color: lightgray;
+    transition: .5s;
+}
+
+.right_dark_theme label input:checked ~ .toggle::before {
+    left: 33px;
+}
+
+.right_dark_theme label input:checked ~ .toggle {
+    background: white;
+    border: 1.5px solid rgb(80, 80, 80);
+}
+
+.color_checkboxes {
+    display: flex;
+    flex-flow: row;
+}
+
+.color_checkboxes label {
+    margin-right: 20px;
+}
+
+.color {
+    user-select: none;
+    padding: 6px 15px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.color_checkboxes label input:checked ~ .color::before {
+    color: white;
+    content: "✓";
+    position: absolute;
+    left: 9px;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.pink {
+    background-color: pink;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.sidebar {
+    display: flex;
+    flex-flow: column;
+    background: gray;
+    border-radius: 0px 5px 5px 0px;
+    padding: 10px;
+    left: 20px;
+}
+
+.sidebar img{
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+}
